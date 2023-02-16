@@ -42,7 +42,7 @@ fn main() {
     std::io::stdin()
         .read_line(&mut start_lineup)
         .expect("Failed to read line");
-    let start_lineup: u32 = start_lineup.trim().parse().unwrap();\
+    let start_lineup: u32 = start_lineup.trim().parse().unwrap();
 
     // Initialize iterator
     let mut i = start_lineup - 1;
@@ -50,7 +50,6 @@ fn main() {
     // For each iteration, get four screenshots for the start, stand, angle, and target of the linup
     loop {
         println!("Collecting screenshots for lineup {}", i + 1);
-
 
         // Get start screenshot
         print!("Get startint position screenshot");
@@ -80,7 +79,7 @@ fn main() {
         i += 1;
 
         // Check if we have reached the end
-        if i == num_lineups{
+        if i == num_lineups {
             break;
         }
     }
