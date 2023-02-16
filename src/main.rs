@@ -52,25 +52,25 @@ fn main() {
         println!("Collecting screenshots for lineup {}", i + 1);
 
         // Get start screenshot
-        print!("Get startint position screenshot");
+        println!("Get starting position screenshot");
         std::io::stdin().read_line(&mut String::new()).unwrap();
         let start_path = lineup_dir.join(format!("start_{}.png", i));
         get_latest_screenshot(start_path);
 
         // Get stand screenshot
-        print!("Get standing location screenshot");
+        println!("Get standing location screenshot");
         std::io::stdin().read_line(&mut String::new()).unwrap();
         let stand_path = lineup_dir.join(format!("stand_{}.png", i));
         get_latest_screenshot(stand_path);
 
         // Get angle screenshot
-        print!("Get throw angle screenshot");
+        println!("Get throw angle screenshot");
         std::io::stdin().read_line(&mut String::new()).unwrap();
         let angle_path = lineup_dir.join(format!("angle_{}.png", i));
         get_latest_screenshot(angle_path);
 
         // Get target screenshot
-        print!("Get target screenshot");
+        println!("Get target screenshot");
         std::io::stdin().read_line(&mut String::new()).unwrap();
         let target_path = lineup_dir.join(format!("target_{}.png", i));
         get_latest_screenshot(target_path);
